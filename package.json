@@ -7,8 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name":"Jameson Allen aka Spdermn02",
+    "email":"jameson.f.allen@gmail.com",
+    "url":"https://github.com/spdermn02"
+  },
+  "contributors": [
+    {"name":"Cheesotron","url":"https://github.com/cheeseotron"}
+  ],
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spdermn02/TouchPortal_XPlane_Plugin.git"
+  },
   "dependencies": {
     "extplanejs": "^0.1.4",
     "touchportal-api": "^1.0.6"
