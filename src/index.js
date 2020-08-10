@@ -1,13 +1,12 @@
 const XPlaneJS = require("extplanejs");
 const { BUTTONS, KEYS} = require("./constants");
-const { WRITABLE_REFS, READABLE_REFS } = require("./data-refs");
+const { WRITABLE_REFS, READABLE_REFS, COMMAND_REFS } = require("./xplane-refs");
 
-//const XPlaneButtons = require("./constants").BUTTONS;
-//const XPlaneKeys = require("./constants").KEYS;
 const TPClient = new (require("touchportal-api")).Client();
 const pluginId = "TP-XPlane";
 
-/* The following is the update Interval for reading from XPlane - in seconds, examples below
+/* 
+   The following is the update Interval for reading from XPlane - in seconds, examples below
    .33 = 3Hz (3 refreshes per second)
    .1 = 10Hz (10 refreshes per second)
    .016 ~ 60Hz (60 refreshes per second)
@@ -81,5 +80,6 @@ XPlane.on("loaded",() => {
 
 console.log(READABLE_REFS);
 console.log(WRITABLE_REFS);
+console.log(COMMAND_REFS);
 
 //TPClient.connect({pluginId});
