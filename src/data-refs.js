@@ -1,7 +1,7 @@
 const fs = require("fs");
 const readline = require('readline');
 
-const contents = fs.readFileSync('../resources/data-refs.txt');
+const contents = fs.readFileSync('resources/data-refs.txt');
 const lines = contents.toString().split(/\n/);
 
 let writableRefs = {};
